@@ -1,0 +1,11 @@
+<div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="10px" style="padding:5px 3px" *ngIf="items.length!=0">
+    <div fxFlex="25%" *ngFor="let item of items">
+        <mat-toolbar color="primary" class="Edges">
+            {{item.title|translate}}
+        </mat-toolbar>
+        <mat-card class="buttomDiv">
+            {{item.data|translate}}
+            {{item.summary|translate}}
+        </mat-card>
+    </div>
+</div>

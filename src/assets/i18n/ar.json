@@ -1,0 +1,20 @@
+{
+  "enumeration": "البيانات العامة",
+  "titreProject": "عنوان المشروع ",
+  "addArticle": "إضافة عنصر",
+  "display": "التسمية",
+  "value": "القيمة",
+  "idParent": " الأب",
+  "code": "الكود",
+  "filter": "Filter",
+  "noData": "لا توجد معلومات عن :",
+  "parametre": "الإعدادات",
+  "about": "A propos",
+  "home": "الرئيسية",
+  "dir": "rtl",
+  "info": "معلومة",
+  "user": "المستخدم",
+  "disconnect": "الخروج",
+  "profile": "بروفايل",
+  "lock": "إغلاق"
+}

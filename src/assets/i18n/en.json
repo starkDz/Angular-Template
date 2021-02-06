@@ -1,0 +1,20 @@
+{
+  "titreProject": "Project Title",
+  "enumeration": "Enumerations",
+  "parametre": "Settings",
+  "about": "About",
+  "home": "Home",
+  "addArticle": "Add New Article",
+  "display": "Description",
+  "value": "Value",
+  "idParent": " Parent ",
+  "code": "Code",
+  "filter": "Filter",
+  "noData": "No data matching the filter :",
+  "dir": "ltr",
+  "info": "info",
+  "user": "User",
+  "disconnect": "Logout",
+  "profile": "Profile",
+  "lock": "Lock"
+}

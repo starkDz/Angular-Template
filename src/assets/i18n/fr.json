@@ -1,0 +1,20 @@
+{
+  "titreProject": "Titre de projet",
+  "enumeration": "Enumerations",
+  "parametre": "Parametre",
+  "about": "A propos",
+  "home": "Accueil",
+  "addArticle": "Ajouter un article",
+  "display": "Description",
+  "value": "Valeur",
+  "idParent": "Parent ",
+  "code": "Code",
+  "filter": "Filtre",
+  "noData": "Pas de donnees a afficher pour le filter :",
+  "dir": "ltr",
+  "info": "info",
+  "user": "Utilisateur",
+  "disconnect": "Se deconnecter",
+  "profile": "Profile",
+  "lock": "Verouiller"
+}
