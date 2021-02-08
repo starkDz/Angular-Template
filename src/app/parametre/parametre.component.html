@@ -1,1 +1,26 @@
-<p>parametre works!</p>
+<app-data-summary-header [items]="items"></app-data-summary-header>
+<div
+  fxLayout="row"
+  fxLayoutAlign="space-betweenstart"
+  fxLayoutGap="10px"
+  style="padding: 5px 5px"
+>
+  <div fxFlex="20" fxFlexFill>
+    <div fxLayout="column" fxLayoutAlign="space-between center" style="min-height: 500px">
+        <br>
+        <img src="../../assets/images/airplane.png" fxFlexFill style="border-radius: 20%;border:solid 2px rgb(218, 218, 218)">
+      <button mat-raised-button color="primary" fxFlexFill>
+        Plus de détails
+      </button>
+    </div>
+  </div>
+  <div fxFlex="60" fxFlexFill>
+    <div class="leftEdge leftEdgeStyle" style="min-height: 500px"></div>
+  </div>
+  <div fxFlex="20">
+    <div
+    fxLayout="column" fxLayoutGap="30px">
+    <app-data-liste-header [items]="itemsListeTravaux"></app-data-liste-header>
+    <app-data-liste-header [items]="itemsListeRG"></app-data-liste-header></div>
+  </div>
+</div>
