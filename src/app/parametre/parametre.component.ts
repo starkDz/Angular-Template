@@ -8,7 +8,7 @@ import { summaryHeaderItem } from '../SharedComponents/data-summary-header/data-
   styleUrls: ['./parametre.component.scss'],
 })
 export class ParametreComponent implements OnInit {
-  items: summaryHeaderItem[] = [];
+  items!: summaryHeaderItem[];
   itemsListeTravaux!: summaryHeaderItemListe;
   itemsListeRG!: summaryHeaderItemListe;
   constructor() {}
