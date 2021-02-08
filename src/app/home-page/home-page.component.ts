@@ -13,11 +13,12 @@ export class HomePageComponent implements OnInit {
   itemsGros!:summaryHeaderItem[];
   items!:summaryHeaderItem[];
   huile!:summaryHeaderItem[];
+  //TODO Profile Interface
   constructor() { }
   ngOnInit(): void {
     this.itemsGros = [
-      { title: 'react', data: '7TW-WE', icon: '' },
-      { title: 'tuy', data: '10MK4532', icon: '' },
+      { title: 'react', data: '7TW-##', icon: '' },
+      { title: 'tuy', data: '10MK####', icon: '' },
       { title: 'VKA', data: '00:00:00', icon: '' },
       { title: 'turbo', data: '1157', icon: '' },
     ];
