@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 export interface summaryHeaderItem{
   title: string,
   data: string,
-  summary: string
+  icon: string
 }
 @Component({
   selector: 'app-data-summary-header',
@@ -12,16 +12,12 @@ export interface summaryHeaderItem{
 // tslint:disable-next-line: class-name
 
 export class DataSummaryHeaderComponent implements OnInit {
+  @Input()
   items: summaryHeaderItem[] = [];
   constructor() { }
 
   ngOnInit(): void {
-    this.items=[
-      {title:'info',data:'info',summary:'info'},
-      {title:'info',data:'info',summary:'info'},
-      {title:'info',data:'info',summary:'info'},
-      {title:'info',data:'info',summary:'info'},
-    ]
+    
   }
 
 }

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-export interface summaryHeaderItem {
+import { Component, Input, OnInit } from '@angular/core';
+export interface summaryHeaderItemListe {
   title: string;
   data: string[];
 }
@@ -9,10 +9,10 @@ export interface summaryHeaderItem {
   styleUrls: ['./data-liste-header.component.scss'],
 })
 export class DataListeHeaderComponent implements OnInit {
-  items!: summaryHeaderItem;
+  @Input()
+  items!: summaryHeaderItemListe;
   constructor() {}
 
   ngOnInit(): void {
-    this.items = { title: 'info', data: ['info', 'info', 'info'] };
   }
 }
