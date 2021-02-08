@@ -19,7 +19,7 @@ export class HomePageComponent implements OnInit {
       { title: 'react', data: '7TW-WE', icon: '' },
       { title: 'tuy', data: '10MK4532', icon: '' },
       { title: 'VKA', data: '00:00:00', icon: '' },
-      { title: 'turbo', data: '154', icon: '' },
+      { title: 'turbo', data: '1157', icon: '' },
     ];
     this.items = [
       { title: 'Position Gauche', data: '', icon: '' },
