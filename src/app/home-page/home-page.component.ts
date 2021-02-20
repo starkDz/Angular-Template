@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
-  // displayedCol: string[] = [];
-  // data: MatTableDataSource<any> = new MatTableDataSource();
-
-  //TODO Profile Interface
+ 
   constructor() {}
   ngOnInit(): void {}
 }
