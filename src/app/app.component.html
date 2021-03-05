@@ -68,14 +68,14 @@
                 <mat-menu #notification="matMenu">
                     <div class="notificationDiv">fjlskjlks</div>
                 </mat-menu>
-                <mat-menu #profil="matMenu">
-                    <button mat-menu-item>
+                <mat-menu #profil="matMenu" >
+                    <button mat-menu-item routerLink="/profile">
                         <mat-icon>assignment_ind</mat-icon>{{'profile'|translate}}
                     </button>
-                    <button mat-menu-item>
+                    <button mat-menu-item routerLink="/lock">
                         <mat-icon>lock</mat-icon>{{'lock'|translate}}
                     </button>
-                    <button mat-menu-item>
+                    <button mat-menu-item routerLink="/login">
                         <mat-icon>power_settings_new</mat-icon>{{'disconnect'|translate}}
                     </button>
                 </mat-menu>

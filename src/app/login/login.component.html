@@ -1,0 +1,42 @@
+<br />
+<br />
+<br />
+<br />
+<br />
+<div fxLayout="column" fxLayoutAlign="space-around center">
+  <div style="background: none">
+    <img mat-card-avatar class="mat-card-avatar-big" />
+  </div>
+
+  <div fxFlex>
+    <br />
+  </div> 
+
+  <mat-form-field
+    fxFlex
+    style="width: 400px"
+    appearance="outline"
+  >
+    <input matInput placeholder="{{ 'username' | translate }}" />
+  </mat-form-field> 
+
+  <mat-form-field
+    fxFlex
+    class="example-full-width"
+    appearance="outline"
+    style="width: 400px"
+  >
+    <input matInput placeholder="{{ 'password' | translate }}" />
+  </mat-form-field>
+  <div fxFlex class="example-full-width" style="width: 400px" >
+    <button
+      mat-stroked-button
+      color="primary"
+      style="padding: 6px"
+      class="btn-block"
+      style="width: 400px;" 
+    >
+      {{ "signin" | translate }}
+    </button>
+  </div>
+</div>
