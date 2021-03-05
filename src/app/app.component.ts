@@ -3,6 +3,7 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { CookieService } from 'ngx-cookie-service';
+import { LoginService } from './login.service';
 
 @Component({
   selector: 'app-root',
@@ -15,11 +16,15 @@ export class AppComponent {
   showNavigation = true;
   panelOpenState = true;
   // tslint:disable-next-line: max-line-length
+
+  logout(){
+    this.serviceLog.logout();
+  }
   constructor(
     public translate: TranslateService,
     public cookieService: CookieService,
     private ref: ChangeDetectorRef,
-    private http: HttpClient
+    private http: HttpClient,private serviceLog:LoginService
   ) {}
   // tslint:disable-next-line: typedef
   openDrawer() {

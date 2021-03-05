@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { EnumerationComponent } from './enumeration/enumeration.component';
 import { I18nModule } from './i18n/i18n.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CookieService } from 'ngx-cookie-service';
 import {
@@ -51,6 +51,7 @@ import { LockComponent } from './lock/lock.component';
     I18nModule,
     FlexLayoutModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     CookieService,

@@ -75,7 +75,7 @@
                     <button mat-menu-item routerLink="/lock">
                         <mat-icon>lock</mat-icon>{{'lock'|translate}}
                     </button>
-                    <button mat-menu-item routerLink="/login">
+                    <button mat-menu-item (click)="logout()">
                         <mat-icon>power_settings_new</mat-icon>{{'disconnect'|translate}}
                     </button>
                 </mat-menu>

@@ -1,24 +1,25 @@
-<br />
-<br />
-<br />
-<br />
-<br />
-<div fxLayout="column" fxLayoutAlign="space-around center">
+<form
+  fxLayout="column"
+  fxLayoutAlign="space-around center"
+  fxLayoutGap="5px"
+  [formGroup]="authentication"
+  style="padding-top: 100px"
+  (ngSubmit)="onSubmit()"
+>
   <div style="background: none">
     <img mat-card-avatar class="mat-card-avatar-big" />
   </div>
 
-  <div fxFlex>
-    <br />
-  </div> 
-
-  <mat-form-field
-    fxFlex
-    style="width: 400px"
-    appearance="outline"
-  >
-    <input matInput placeholder="{{ 'username' | translate }}" />
-  </mat-form-field> 
+  <mat-form-field fxFlex style="width: 400px" appearance="outline">
+    <input
+      matInput
+      placeholder="{{ 'username' | translate }}"
+      formControlName="userNameOrEmailAddress"
+    />
+    <mat-hint *ngIf="!username && isSubmited" style="color: red"
+      >Username is Required</mat-hint
+    >
+  </mat-form-field>
 
   <mat-form-field
     fxFlex
@@ -26,17 +27,25 @@
     appearance="outline"
     style="width: 400px"
   >
-    <input matInput placeholder="{{ 'password' | translate }}" />
+    <input
+      matInput
+      placeholder="{{ 'password' | translate }}"
+      formControlName="password"
+      type="password"
+    />
+    <mat-hint *ngIf="!password && isSubmited" style="color: red"
+      >Password is Required</mat-hint
+    >
   </mat-form-field>
-  <div fxFlex class="example-full-width" style="width: 400px" >
+  <div fxFlex class="example-full-width" style="width: 400px">
     <button
       mat-stroked-button
       color="primary"
-      style="padding: 6px"
       class="btn-block"
-      style="width: 400px;" 
+      style="width: 400px; padding: 6px"
+      type="submit"
     >
       {{ "signin" | translate }}
     </button>
   </div>
-</div>
+</form>

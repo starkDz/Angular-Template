@@ -1,4 +1,4 @@
  
 export class AppSettings {
-    public static API_ENDPOINT='https://localhost:44346';
+    public static API_ENDPOINT='https://localhost:44324';
  }
